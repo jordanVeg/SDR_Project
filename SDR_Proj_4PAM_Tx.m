@@ -3,7 +3,7 @@
 % 4PAM encoding is used
 % Output signal is "r"
 
-clear
+%clear
 % Enable plots of signals at various points as signal is developed
 plotsONOFF=[0 0 0 0 0 0 0 0 0];
 %plotsONOFF=[1 1 1 1 1 1 1 1 1];
@@ -76,7 +76,7 @@ else
     txParams.f_if_err=0;  % No IF frequency error
 end    
 if BAUDerrorON==1
-    txParams.T_t_err=1;   % Percentage Error in Baud rate (symbol rate)
+    txParams.T_t_err=0.1;   % Percentage Error in Baud rate (symbol rate)
 else
     txParams.T_t_err=0;   % No Baud rate error
 end    
